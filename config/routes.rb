@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
 
   root 'home#index'
 
@@ -10,6 +11,7 @@ Rails.application.routes.draw do
   post '/pokemon/:id/sell', to: 'pokemon#sell'
 
   # Users routes
+  get '/users', to: 'user#index'
   get '/me', to: 'user#show'
   get '/me/add', to: 'user#add_money_form'
   patch '/me/add', to: 'user#add_money'
