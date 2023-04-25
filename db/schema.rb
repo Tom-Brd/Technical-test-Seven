@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_25_110754) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_25_121237) do
   create_table "pokemons", force: :cascade do |t|
     t.integer "pokemonId"
     t.string "name"
@@ -36,7 +36,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_25_110754) do
     t.integer "userId"
     t.string "email"
     t.string "password"
-    t.decimal "balance"
+    t.decimal "balance", default: "0.0"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "encrypted_password", default: "", null: false
