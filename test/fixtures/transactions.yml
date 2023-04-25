@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  transactionId: 1
+  action: 1
+  userId: 1
+  pokemonId: 1
+
+two:
+  transactionId: 1
+  action: 1
+  userId: 1
+  pokemonId: 1
